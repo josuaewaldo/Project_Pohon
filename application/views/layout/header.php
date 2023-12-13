@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="bg-[#527853] bg-gradient-to-r from-[#527853] to-[#ff682c]">
+    <div class="bg-[#527853] bg-gradient-to-r from-[#5167d4] to-[#822d7e]">
         <!-- Navbar -->
         <h1 class="text-center">Myhon</h1>
         <div class="w-full h-24 py-12 flex items-center justify-between pl-12 pr-20">
