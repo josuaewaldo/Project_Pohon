@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="bg-[#527853] ">
+    <div class="bg-[#527853] bg-gradient-to-r from-[#527853] to-[#527853]">
         <!-- Navbar -->
         <div class="w-full h-24 py-12 flex items-center justify-between pl-12 pr-20">
             <div class="text-4xl font-bold text-yellow-100">
