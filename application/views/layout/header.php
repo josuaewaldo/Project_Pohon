@@ -25,7 +25,7 @@
 <body>
     <div class="bg-[#527853] bg-gradient-to-r from-[#3f682d] to-[#7ccc48]">
         <!-- Navbar -->
-        <h1 class="text-center text-5xl font-bold">MyHon</h1>
+
         <div class="w-full h-24 py-12 flex items-center justify-between pl-12 pr-20">
             <div class="text-4xl font-bold text-yellow-100">
                 Volun<span class="text-yellow-500">T</span>rees
