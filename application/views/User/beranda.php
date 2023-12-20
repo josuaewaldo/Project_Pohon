@@ -1,6 +1,6 @@
 <!--Overlay-->
 <div class="bg-cover mx-12 my-5 m-auto max-w-9xl bg-no-repeat h-[600px] 
-        relative rounded-md" style="background-image: url(./assets/img/2.jpg);">
+        relative rounded-md" style="background-image: url('<?php echo base_url("assets/img/"); ?>2.jpg');">
     <div class="absolute inset-0 bg-black opacity-50 rounded-md shadow-black shadow-md"></div>
     <div class="flex-col">
         <div class="absolute inset-0 flex items-center justify-center text-white text-5xl font-bold">
@@ -43,7 +43,7 @@
     <div class="flex justify-center mt-16">
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire1.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire1.jpg"
                     alt="Pekanbaru" />
             </picture>
             <h1 class="mt-4 mb-2 text-xl font-bold">Pekanbaru</h1>
@@ -55,7 +55,7 @@
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire2.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire2.jpg"
                     alt="Bengkalis" />
             </picture>
             <h1 class="mt-4 mb-2 text-xl font-bold">Bengkalis</h1>
@@ -67,7 +67,7 @@
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire3.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire3.jpg"
                     alt="Bengkalis" />
             </picture>
             <h1 class="mt-4 mb-2 text-xl font-bold">Kerinci</h1>
@@ -79,7 +79,7 @@
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire4.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire4.jpg"
                     alt="Bengkalis" />
             </picture>
             <h1 class="mt-4 mb-2 text-xl font-bold">Dumai</h1>
@@ -103,7 +103,7 @@
     <div class="flex justify-center mt-16">
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire1.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire1.jpg"
                     alt="Pekanbaru" />
             </picture>
 
@@ -114,7 +114,7 @@
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire2.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire2.jpg"
                     alt="Bengkalis" />
             </picture>
             <h1 class="mt-4 mb-2 text-xl font-bold">Penanaman-Bengkalis</h1>
@@ -124,7 +124,7 @@
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire3.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire3.jpg"
                     alt="Bengkalis" />
             </picture>
 
@@ -135,7 +135,7 @@
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
-                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="./assets/img/Fire4.jpg"
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire4.jpg"
                     alt="Bengkalis" />
             </picture>
 
