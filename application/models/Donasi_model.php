@@ -2,9 +2,9 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class user_model extends CI_Model {
-	public $table ='user';
-    public $id ='user.id_user';
+class donasi_model extends CI_Model {
+	public $table ='donasi';
+    public $id ='donasi.id_donasi';
     public function __construct()
     {
         parent:: __construct();
@@ -19,7 +19,7 @@ class user_model extends CI_Model {
     {
         
         $this->db->from($this->table);;
-        $this->db->where('id_user',$id);
+        $this->db->where('id_donasi',$id);
         $query = $this->db->get();
         return $query->row_array();
     }
