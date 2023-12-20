@@ -15,8 +15,8 @@
 
 <!-- Penghijauan Voluntrees -->
 <div class="py-20 m-auto">
-    <h1 class="font-medium font-sans text-center text-yellow-50 text-[48px]">Penghijauan Voluntrees</h1>
-    <div class="flex items-center text-center justify-center space-x-28 mt-20 text-9xl text-yellow-50">
+    <h1 class="font-semibold text-center text-yellow-50 text-[48px] font-poppins">Penghijauan Voluntrees</h1>
+    <div class="flex items-center text-center justify-center space-x-28 mt-20 text-9xl text-yellow-50 font-poppins">
         <div>
             <div class="text-yellow-900">2.5jt</div>
             <p class="text-3xl py-8">donasi terkumpul</p>
@@ -34,9 +34,9 @@
 
 <!-- Donasi -->
 <div class="py-20 m-auto">
-    <h1 class="font-medium font-sans text-center text-yellow-50 text-[48px]">Target Donasi</h1>
+    <h1 class="font-semibold text-center text-yellow-50 text-[48px] font-poppins">Target Donasi</h1>
     <div class="-mb-14 flex justify-end mt-12 mr-28">
-        <button type="submit" class="bg-white hover:bg-[#d4d4d4] text-[#496b4a] font-bold py-2 px-4 rounded">
+        <button type="submit" class="bg-white hover:bg-[#d4d4d4] text-[#496b4a] font-semibold font-poppins py-2 px-4 rounded">
             Lihat Selengkapnya
         </button>
     </div>
@@ -51,7 +51,7 @@
                 <div class="bg-yellow-400 h-2.5 rounded-full dark:bg-gray-300" style="width: 45%"></div>
             </div>
             <a href="<?= base_url('User/formDonasi'); ?>"
-                class="bg-[#527853] hover:bg-[#496b4a] text-white font-bold py-2 px-4 rounded">Donasi Sekarang</a>
+                class="bg-[#527853] hover:bg-[#496b4a] text-white font-semibold font-poppins py-2 px-4 rounded">Donasi Sekarang</a>
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
@@ -63,7 +63,7 @@
                 <div class="bg-yellow-400 h-2.5 rounded-full dark:bg-gray-300" style="width: 15%"></div>
             </div>
             <a href="<?= base_url('User/formDonasi'); ?>"
-                class="bg-[#527853] hover:bg-[#496b4a] text-white font-bold py-2 px-4 rounded">Donasi Sekarang</a>
+                class="bg-[#527853] hover:bg-[#496b4a] text-white font-semibold font-poppins py-2 px-4 rounded">Donasi Sekarang</a>
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
@@ -75,7 +75,7 @@
                 <div class="bg-yellow-400 h-2.5 rounded-full dark:bg-gray-300" style="width: 70%"></div>
             </div>
             <a href="<?= base_url('User/formDonasi'); ?>"
-                class="bg-[#527853] hover:bg-[#496b4a] text-white font-bold py-2 px-4 rounded">Donasi Sekarang</a>
+                class="bg-[#527853] hover:bg-[#496b4a] text-white font-semibold font-poppins py-2 px-4 rounded">Donasi Sekarang</a>
         </div>
         <div class="p-4 m-8 w-80 bg-white shadow-md rounded-xl">
             <picture class="rounded-lg block overflow-hidden">
@@ -87,16 +87,16 @@
                 <div class="bg-yellow-400 h-2.5 rounded-full dark:bg-gray-300" style="width: 90%"></div>
             </div>
             <a href="<?= base_url('User/formDonasi'); ?>"
-                class="bg-[#527853] hover:bg-[#496b4a] text-white font-bold py-2 px-4 rounded">Donasi Sekarang</a>
+                class="bg-[#527853] hover:bg-[#496b4a] text-white font-semibold font-poppins py-2 px-4 rounded">Donasi Sekarang</a>
         </div>
     </div>
 </div>
 
 <!-- Event-->
 <div class="py-20 m-auto pb-40">
-    <h1 class="font-medium font-sans text-center text-yellow-50 text-[48px]">Event Voluntrees</h1>
+    <h1 class="font-semibold text-center text-yellow-50 text-[48px] font-poppins">Event Voluntrees</h1>
     <div class="-mb-14 flex justify-end mt-12 mr-28">
-        <button type="submit" class="bg-white hover:bg-[#d4d4d4] text-[#496b4a] font-bold py-2 px-4 rounded">
+        <button type="submit" class="bg-white hover:bg-[#d4d4d4] text-[#496b4a] font-semibold font-poppins py-2 px-4 rounded">
             Lihat Selengkapnya
         </button>
     </div>
