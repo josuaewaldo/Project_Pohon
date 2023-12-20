@@ -1,6 +1,6 @@
 <!-- form Donasi -->
 <div class="my-[118px] mx-auto max-w-4xl">
-    <form action=""  method="POST"
+    <form action="tambah"  method="POST"
         class="bg-yellow-50 shadow-xl shadow-green-800/50 rounded-bl-3xl rounded-tr-3xl px-8 pt-6 pb-8 mb-4 grid grid-cols-1 md:grid-cols-2 gap-8"
         >
         <!-- Bagian Pengisian Informasi -->
@@ -10,21 +10,21 @@
                 <label class="block text-[#527853] text-sm font-bold mb-2" for="namaLengkap">Nama Lengkap</label>
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="namaLengkap" type="text" placeholder="Nama Lengkap" value="<?= set_value('nama_lengkap');?>" required>
+                    id="namaLengkap" type="text" placeholder="Nama Lengkap" value="<?= set_value('nama_donatur');?>" name="nama_donatur"     required>
                     <?= form_error('nama_lengkap', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="mb-4">
                 <label class="block text-[#527853] text-sm font-bold mb-2" for="email">Alamat Email</label>
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="email" type="email" placeholder="Alamat Email" value="<?= set_value('email');?>" required>
+                    id="email" type="email" placeholder="Alamat Email" value="<?= set_value('email');?>" name="email" required>
                     <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="mb-4">
                 <label class="block text-[#527853] text-sm font-bold mb-2" for="noHp">No HP</label>
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                    id="noHp" type="text" placeholder="No HP" value="<?= set_value('no_hp');?>" required>
+                    id="noHp" type="text" placeholder="No HP" value="<?= set_value('no_hp');?>" name="no_hp"required>
                     <?= form_error('no_hp', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="mb-4">
@@ -32,7 +32,7 @@
                     Donasi (1 bibit = Rp.10.000)</label>
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                    id="nominalDonasi" type="text" placeholder="Rp." value="<?= set_value('nominal');?>" required>
+                    id="nominalDonasi" type="text" placeholder="Rp." value="<?= set_value('nominal');?>" name="nominal" required>
                     <?= form_error('no_hp', '<small class="text-danger pl-3">', '</small>'); ?>
             <div>
                 
@@ -56,7 +56,7 @@
             <div class="mb-4">
                 <label class="block text-[#527853] text-sm font-bold mb-2" for="uploadBukti">Upload Gambar Bukti
                     Pembayaran</label>
-                <input type="file" id="uploadBukti" name="uploadBukti" accept="image/*"
+                <input type="file" id="uploadBukti" name="bukti_pembayaran" accept="image/*"
                     class="border-2 border-neutral-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
             </div>
         </div>

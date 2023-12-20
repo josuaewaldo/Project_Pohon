@@ -25,6 +25,7 @@ class User extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('User_model', 'userrole');
+		$this->load->model('Donatur_model');
 	}
 
 	public function index()
@@ -116,7 +117,7 @@ class User extends CI_Controller
 				'tanggal_lahir' => htmlspecialchars($this->input->post('tanggal_lahir', true)),
 				'role' => "Member",
 				'date_created' => date('Y-m-d H:i:s'),
-				'gambar' => "default.jpg"
+				'bukti_pembayaran' => "default.jpg"
 			];
 			$this->userrole->insert($data);
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Selamat!
@@ -142,7 +143,7 @@ class User extends CI_Controller
 	{
         $data['judul'] = "Form Donasi";
        
-        $data['prodi'] = $this->Donatur_model->get();
+
         $this->form_validation->set_rules('nama_donatur', 'nama_donatur', 'required', ['required' => 'Nama Lengkap Wajib di isi']);
         $this->form_validation->set_rules('email', 'email', 'required', ['required' => 'Email Wajib di isi']);
         $this->form_validation->set_rules('no_hp', 'no_hp', 'required', ['required' => 'No Hp Wajib di isi']);
@@ -151,7 +152,7 @@ class User extends CI_Controller
        
     if ($this->form_validation->run() == false) {
         $this->load->view("layout/header", $data);
-        $this->load->view("prodi/formDonasi", $data);
+        $this->load->view("User/formDonasi", $data);
         $this->load->view("layout/footer");
     } else {
         $data = [
@@ -159,18 +160,20 @@ class User extends CI_Controller
             'email'=> $this->input->post('email'),
             'no_hp'=> $this->input->post('no_hp'),
             'nominal'=> $this->input->post('nominal'),
-			'tanggal_donasi' => time()
+			'tanggal_donasi' => date('Y-m-d H:i:s')
+
+
             
     ];
-    $upload_image=$_FILES['gambar']['name']; 
+    $upload_image=$_FILES['bukti_pembayaran']['name']; 
     if ($upload_image) { 
 	$config['allowed types']='gif|jpg|png';
 	$config['max_size'] = "2048"; 
 	$config['upload_path']='/assets/img/bukti/';
 	$this->load->library('upload', $config); 
-	if ($this->upload->do_upload('gambar')) {
+	if ($this->upload->do_upload('bukti_pembayaran')) {
 	$new_image=$this->upload->data('file_name'); 
-	$this->db->set('gambar', $new_image); } 
+	$this->db->set('bukti_pembayaran', $new_image); } 
     else {
 	echo $this->upload->display_errors();
 	}
