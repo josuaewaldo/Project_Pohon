@@ -40,5 +40,31 @@
             <b> <div class="text-primary-yellow-100"><font size="4">Kebakaran Hutan terjadi lagi di Kerinci,Riau</font></div></b>
             <a href="<?= base_url('User/detail3'); ?>"><p class="text-3xl py-8">Detail</p></a>
         </div>
+        </div>
+<div class="py-20 m-auto">
+<div class="flex items-start text-center justify-center space-x-28 mt-20 text-9xl text-yellow-50 font-poppins">
+        <div>
+        <picture class="rounded-lg block overflow-hidden">
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire4.jpg"
+                     />
+            <b> <div class="text-primary-yellow-100"><font size="4">SAMPLE</font></div></b>
+            <a href="<?= base_url('User/detail3'); ?>"><p class="text-3xl py-8">Detail</p></a>
+        </div>
+        <div>
+        <picture class="rounded-lg block overflow-hidden">
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire4.jpg"
+                     />
+            <b> <div class="text-primary-yellow-100"><font size="4">SAMPLE</font></div></b>
+            <a href="<?= base_url('User/detail3'); ?>"><p class="text-3xl py-8">Detail</p></a>
+        </div>
+        <div>
+        <picture class="rounded-lg block overflow-hidden">
+                <img class="w-full h-40 object-cover hover:scale-125 ease-in duration-150" src="<?= base_url('assets/img/'); ?>Fire4.jpg"
+                     />
+            <b> <div class="text-primary-yellow-100"><font size="4">SAMPLE</font></div></b>
+            <a href="<?= base_url('User/detail3'); ?>"><p class="text-3xl py-8">Detail</p></a>
+        </div>
     </div>
+</div>
+</div>
 </div>
