@@ -34,11 +34,11 @@
             <div class="font-poppins flex space-x-6 -mb-4">
                 <a href="<?= base_url('General'); ?>"
                     class="text-yellow-100 text-[18px] font-medium hover:text-green-500 transition duration-200">Beranda</a>
-                <a href="#"
+                <a href="<?= base_url('User/news'); ?>"
                     class="text-yellow-100 text-[18px] font-medium hover:text-green-500 transition duration-200">News</a>
-                <a href="#"
+                <a href="<?= base_url('User/Edukasi'); ?>"
                     class="text-yellow-100 text-[18px] font-medium hover:text-green-500 transition duration-200">Edukasi</a>
-                <a href="#"
+                <a href="<?= base_url('User/Reward'); ?>"
                     class="text-yellow-100 text-[18px] font-medium hover:text-green-500 transition duration-200">Reward</a>
             </div>
             <?php if ($this->session->userdata('email')): ?>

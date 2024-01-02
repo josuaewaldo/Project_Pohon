@@ -139,6 +139,42 @@ class User extends CI_Controller
 		$this->load->view('user/formDonasi');
 		$this->load->view('layout/footer');
 	}
+	public function Edukasi()
+	{
+		$this->load->view('layout/header');
+		$this->load->view('user/Edukasi');
+		$this->load->view('layout/footer');
+	}
+	public function Reward()
+	{
+		$this->load->view('layout/header');
+		$this->load->view('user/Reward');
+		$this->load->view('layout/footer');
+	}
+	public function news()
+	{
+		$this->load->view('layout/header');
+		$this->load->view('user/news');
+		$this->load->view('layout/footer');
+	}
+	public function detail1()
+	{
+		$this->load->view('layout/header');
+		$this->load->view('user/detail1');
+		$this->load->view('layout/footer');
+	}
+	public function detail2()
+	{
+		$this->load->view('layout/header');
+		$this->load->view('user/detail2');
+		$this->load->view('layout/footer');
+	}
+	public function detail3()
+	{
+		$this->load->view('layout/header');
+		$this->load->view('user/detail3');
+		$this->load->view('layout/footer');
+	}
 	function tambah()
 	{
         $data['judul'] = "Form Donasi";
