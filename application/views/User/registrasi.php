@@ -1,6 +1,6 @@
 <!-- Login -->
 <div class="my-16 mt-7 mx-auto max-w-xl">
-    <form method="POST" action="<?= base_url('User/registrasi'); ?>"
+    <form method="POST" action="<?= base_url('Auth/registrasi'); ?>"
         class="bg-yellow-50 shadow-xl shadow-green-800/50 rounded-bl-3xl rounded-tr-3xl px-8 pt-6 pb-8 mb-4">
         <h1 class="text-2xl font-bold mb-6 text-[#527853] text-center">Registration Page</h1>
         <div class="mb-4">

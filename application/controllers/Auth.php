@@ -18,7 +18,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
  *
  */
 
-class User extends CI_Controller
+class Auth extends CI_Controller
 {
 
 	public function __construct()
@@ -120,8 +120,8 @@ class User extends CI_Controller
 			];
 			$this->userrole->insert($data);
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Selamat!
-      Akunmu berhasil di daftar, Silahkan Login </div>');
-			redirect('User');
+      									Akunmu berhasil di daftar, Silahkan Login </div>');
+			redirect('Auth');
 		}
 	}
 
@@ -131,6 +131,7 @@ class User extends CI_Controller
 		$this->session->unset_userdata('role');
 		$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Berhasil Logout</div>');
 		redirect('General');
+<<<<<<< Updated upstream:application/controllers/User.php
 	}
 	public function formDonasi()
 	{
@@ -139,6 +140,9 @@ class User extends CI_Controller
 		$this->load->view('layout/footer');
 	}
 
+=======
+	}	
+>>>>>>> Stashed changes:application/controllers/Auth.php
 }
 
 

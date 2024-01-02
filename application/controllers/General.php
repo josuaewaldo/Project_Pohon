@@ -24,14 +24,34 @@ class General extends CI_Controller
   public function __construct()
   {
     parent::__construct();
+    $this->load->model('Donasi_model');
+    $this->load->model('Event_model');
   }
 
   public function index()
   {
+    $data['donasi'] = $this->Donasi_model->get();
+    $data['event'] = $this->Event_model->get();
+
+    $total_donasi = 0;
+    foreach ($data['donasi'] as $donasi) {
+      $total_donasi += $donasi['total_donasi'];
+    }
+
+    $total_event = 0;
+    foreach ($data['event'] as $event){
+      $total_event += 1;
+    }
+
+    $data['total_donasi'] = $total_donasi;
+    $data['pohon_tertanam'] = $total_donasi / 10000;
+    $data['total_event'] = $total_event;
     $this->load->view('layout/header');
-		$this->load->view('user/beranda');
+		$this->load->view('user/beranda', $data);
 		$this->load->view('layout/footer');
   }
+
+
 
 }
 

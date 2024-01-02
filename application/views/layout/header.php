@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Project Pohon</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,7 +16,8 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        poppins: ['Poppins']
+                        poppins: ['Poppins'],
+                        material: ['Material Symbols Outlined']
                     }
                 }
             }
@@ -43,16 +45,11 @@
             </div>
             <?php if ($this->session->userdata('email')): ?>
                 <!-- Jika pengguna sudah login -->
-                <a href="<?= base_url('User/logout'); ?>"
+                <a href="<?= base_url('Auth/logout'); ?>"
                     class="bg-[#ffffff] hover:bg-[#819381] text-[#527853] font-poppins font-bold py-2 px-4 rounded">Logout</a>
             <?php else: ?>
                 <!-- Jika pengguna belum login -->
-                <a href="<?= base_url('User'); ?>"
+                <a href="<?= base_url('Auth'); ?>"
                     class="bg-[#ffffff] hover:bg-[#819381] text-[#527853] font-poppins font-bold py-2 px-4 rounded">Login</a>
             <?php endif; ?>
-            <!-- <a href="<?= base_url('User'); ?>"
-                class="bg-[#ffffff] hover:bg-[#819381] text-[#527853] font-poppins font-bold py-2 px-4 rounded">Login</a> -->
-            <!-- <button type="submit" class="bg-[#ffffff] hover:bg-[#819381] text-[#527853] font-bold py-2 px-4 rounded">
-                Login
-            </button> -->
         </div>

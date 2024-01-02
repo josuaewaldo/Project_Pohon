@@ -20,7 +20,7 @@
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                 id="password" name="password" type="password" placeholder="Password" required>
         </div>
-        <h3 class="text-center">Belum Punya Akun?<a href="<?= base_url('User/registrasi'); ?>" class="text-green-800 underline">Registrasi
+        <h3 class="text-center">Belum Punya Akun?<a href="<?= base_url('Auth/registrasi'); ?>" class="text-green-800 underline">Registrasi
                 Disini</a></h3>
         <div class="mt-6 flex items-center justify-center">
             <button
